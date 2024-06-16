@@ -1,3 +1,17 @@
+const gameContent = document.getElementById("gameContent")
+const popupBtn = document.getElementById("infoCloseBtn")
+const popupDiv = document.getElementById("infoPopup")
+
+
+document.addEventListener('DOMContentLoaded', () =>{
+    gameContent.style.display = "none";
+})
+
+popupBtn.addEventListener('click', function() {
+    popupDiv.style.display = "none"
+    gameContent.style.display = "block"
+})
+
 // function getCompChoice(){
 //    return  Math.floor(Math.random() * 3);
 // }
@@ -92,10 +106,6 @@
 // }
 
 // playGame();
-
-
-
-
 
 
 
